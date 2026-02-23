@@ -1,4 +1,4 @@
-# PKG
+# pkg
 
 Collection of reusable Go packages. Each subdirectory is an independent module with its own versioning and documentation. 
 
@@ -19,13 +19,19 @@ Collection of reusable Go packages. Each subdirectory is an independent module w
 ```
 
 ## Table of Contents
-- [IMG](#img)
+- [img](#img)
+- [scan](#scan)
 - [License](#license)
 
-## IMG
+## img
 
 Functions for optimizing, resizing, and converting images using libvips. </br> 
-See [readme.md for img package](img/README.md).
+See [img README](img/README.md). 
+
+## scan
+
+Functions for reading user input from stdin. </br>
+See [scan README](scan/README.md). 
 
 ## License
 MIT Licensed. See [LICENSE](LICENSE) for details.

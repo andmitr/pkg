@@ -1,4 +1,4 @@
-# IMG
+# img
 
 Functions for optimizing, resizing, and converting images using libvips.
 
@@ -65,7 +65,7 @@ go get github.com/andmitr/pkg/img
 
 ## Usage
 
-#### func Optimize
+### func Optimize
 
 ```go
 func Optimize(file string, outDir string) error
@@ -79,7 +79,7 @@ Parameters:
 
 Returns error if file cannot be read or processed.
 
-##### Example
+### Example
 ```go
 err := img.Optimize("inputDir/photo.jpg", "outputDir")
 // Creates: outputDir/photo_min.jpg
@@ -96,7 +96,7 @@ The function applies format-specific compression:
 Compression options are hardcoded for optimal web performance.
 If you need custom settings, fork the repository and modify the options in `optimize.go`.
 
-#### func OptimizeAll
+### func OptimizeAll
 
 ```go
 func OptimizeAll(inDir string, outDir string) error
@@ -107,7 +107,7 @@ OptimizeAll processes all supported images in inDir and saves optimized versions
 Processes files in parallel using all available CPU cores.
 Skips files with unsupported extensions.
 
-##### Example
+#### Example
 
 ```go
 err := img.OptimizeAll("inputDir", "outputDir")
@@ -115,7 +115,7 @@ err := img.OptimizeAll("inputDir", "outputDir")
 // Creates: outputDir/photo1_min.jpg, outputDir/photo2_min.png, etc.
 ```
 
-#### func Resize
+### func Resize
 
 ```go
 func Resize(file string, outDir string, width int, height int) error
@@ -129,14 +129,14 @@ Parameters:
 - `width` - target width in pixels
 - `height` - target height in pixels
 
-##### Example
+#### Example
 ```go
 err := img.Resize("input/photo.jpg", "output", 800, 600)
 // Creates: output/photo_800x600.jpg
 // Stretches the image to exactly 800x600 pixels.
 ```
 
-#### func Convert
+### func Convert
 
 ```go
 func Convert(file string, outDir string, outType string) error
@@ -149,7 +149,7 @@ Parameters:
 - `outDir` - directory for output file
 - `outType` - target format: jpg, jpeg, png, webp, avif
 
-##### Example
+#### Example
 ```go
 err := img.Convert("input/photo.png", "output", "webp")
 // Creates: output/photo.webp
