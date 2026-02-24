@@ -21,6 +21,7 @@ Collection of reusable Go packages. Each subdirectory is an independent module w
 ## Table of Contents
 - [img](#img)
 - [scan](#scan)
+- [random](#random)
 - [License](#license)
 
 ## img
@@ -32,6 +33,11 @@ See [img README](img/README.md).
 
 Functions for reading user input from stdin. </br>
 See [scan README](scan/README.md). 
+
+## random
+
+Cryptographically secure random value generation. </br>
+See [random README](random/README.md). 
 
 ## License
 MIT Licensed. See [LICENSE](LICENSE) for details.
